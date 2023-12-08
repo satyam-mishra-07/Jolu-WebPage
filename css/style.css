@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Mooli&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -8,6 +8,13 @@
 html, body {
     height: 100%;
     width: 100%;
+}
+/*! Roots ---->  */
+:root {
+    --first-color: #0C356A;
+    --second-color: #0174BE;
+    --third-color: #FFC436;
+    --fourth-color: #FFF0CE;
 }
 
 /*^ Navigation  */
@@ -19,7 +26,7 @@ html, body {
     justify-content: space-between;
 }
 .logo h2 {
-    font-size: 2vw;
+    font-size: 2.6vw;
 }
 .logo .navLogo{
     height: 5vw;
@@ -30,5 +37,5 @@ html, body {
 .upperMain {
     height: 100px;
     width: 100%;
-    padding: 1vw 2vw;
+    padding: 1.5vw 2vw;
 }
