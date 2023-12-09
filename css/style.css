@@ -39,3 +39,9 @@ html, body {
     width: 100%;
     padding: 1.5vw 2vw;
 }
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
