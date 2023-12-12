@@ -59,3 +59,19 @@ const landingAnimation = () => {
   });
 };
 landingAnimation();
+const cursor = () => {
+  let contentMain = document.querySelector(".contentMain");
+  contentMain.addEventListener('mousemove', (e) => {
+    gsap.to(".cursor", {
+      scale: 1,
+      x: e.x,
+      y: e.y,
+    })
+  })
+  contentMain.addEventListener('mouseleave', (e) => {
+    gsap.to(".cursor", {
+      scale: 0,
+    })
+  })
+}
+cursor();
