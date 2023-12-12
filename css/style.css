@@ -112,9 +112,10 @@ nav {
     padding-left: 5vw;
     /* background-color: red; */
 }
-.textMain h1 {
+.textMain h1:first-child {
     font-size: 3vw;
+    color: var(--third-color);
 }
-.textMain h1:nth-last-child(1) {
+.textMain .clg-name {
     font-size: 5vw;
 }

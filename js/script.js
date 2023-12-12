@@ -35,3 +35,27 @@ const smoothScroll = () => {
   //! END -------
 };
 smoothScroll();
+const landingAnimation = () => {
+  const timeLine = gsap.timeline();
+  gsap.from("#welcome-text", {
+    duration: 0.7,
+    x: -60,
+    opacity: 0,
+  });
+  gsap.from(".clg-3", {
+    duration: 0.9,
+    x: -60,
+    opacity: 0,
+  });
+  gsap.from(".clg-2", {
+    duration: 1.1,
+    x: -60,
+    opacity: 0,
+  });
+  gsap.from(".clg-1", {
+    duration: 1.4,
+    x: -60,
+    opacity: 0,
+  });
+};
+landingAnimation();
