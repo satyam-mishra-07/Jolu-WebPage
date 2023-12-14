@@ -4,14 +4,15 @@
     src: url(../fonts/Cabin-Regular-TTF.ttf);
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: cabin;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
@@ -23,6 +24,7 @@ html, body {
     --second-color: #0174BE;
     --third-color: #FFC436;
     --fourth-color: #FFF0CE;
+    --5th-color: #ffe00b;
 }
 
 /*^ Navigation  */
@@ -56,7 +58,7 @@ html, body {
     cursor: default;
 }
 
-.logo .navLogo{
+.logo .navLogo {
     height: 5vw;
     width: 5vw;
     object-fit: cover;
@@ -91,6 +93,7 @@ nav {
 
 .navbar a:hover {
     border-bottom: 2px solid #000;
+    color: #0C356A;
 }
 
 .navbar a:nth-last-child(1) {
@@ -123,7 +126,7 @@ nav {
 
 /** Hero Section */
 
-.contentMain{
+.contentMain {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -151,18 +154,65 @@ nav {
     cursor: pointer;
     position: relative;
     display: inline-block;
-} 
+}
+
+.btn {
+    background: #fffcd5;
+    box-shadow: 4px 4px var(--third-color), 9px 9px #151515;
+    color: #151515;
+    border: solid 2px #151515;
+    text-decoration: none;
+    padding: 1vw 2vw;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.4vw;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    cursor: pointer;
+    overflow: hidden;
+    transition-delay: 0s !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px;
+    /* font-family: freight-sans-pro, sans-serif; */
+}
+
+.btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #151515;
+    z-index: -1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.btn:hover::before {
+    width: 100%;
+    left: 0;
+    right: unset;
+}
+
+.btn:hover {
+    box-shadow: 0 0 #ffe00b, 0 0 #151515;
+    color: white;
+}
+
 
 /** Card Section  */
 
-.cards{
+.cards {
     display: flex;
     justify-content: center;
     height: 100vh;
     width: 100%;
 }
 
-.card{
+.card {
     margin: 5vw 2vw;
     padding: 8px 25px;
     text-align: center;
@@ -176,10 +226,10 @@ nav {
     justify-content: center;
 }
 
-.card .card-head{
+.card .card-head {
     font-size: 2vw;
 }
 
-.card .card-text{
+.card .card-text {
     font-size: 1.1vw;
 }
