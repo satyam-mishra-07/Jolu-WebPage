@@ -51,6 +51,7 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 50%;
     pointer-events: none;
+    z-index: 99;
 }
 
 .logo h2 {
@@ -89,6 +90,7 @@ nav {
     font-size: 1.4vw;
     padding: 2px 4px;
     margin: 0 1vw;
+    border-bottom: 2px solid transparent;
 }
 
 .navbar a:hover {
@@ -183,7 +185,7 @@ nav {
     position: absolute;
     content: "";
     top: 0;
-    right: 0;
+    left: 0;
     width: 0%;
     height: 100%;
     background: #151515;
@@ -193,8 +195,8 @@ nav {
 
 .btn:hover::before {
     width: 100%;
-    left: 0;
-    right: unset;
+    right: 0;
+    left: unset;
 }
 
 .btn:hover {
